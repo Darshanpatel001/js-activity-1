@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form for user side</title>
+</head>
+
+<body>
+    <script>
+
+        let user = "darshan"
+        let pass = "123**"
+
+
+        if (user === prompt("enter user name")) {
+            console.log("user is right");
+            const password = prompt("enter your password")
+            if (password === pass) {
+                console.log("login succes");
+                  // 4 subject marks for student
+        const subject1 = parseInt(prompt("enter 1 subject mark"));
+        const subject2 = parseInt(prompt("enter 2 subject mark"));
+        const subject3 = parseInt(prompt("enter 3 subject mark"));
+        const subject4 = parseInt(prompt("enter 4 subject mark"));
+       
+
+        let devide = subject1+subject2+subject3+subject4 / 4;
+        
+        
+
+        console.log("youre percentage is =", devide);
+
+        if (devide > 90) {
+            console.log("grade is A+");
+        }
+        else if (devide > 70 && devide < 90) {
+            console.log("grade is b+");
+        }
+        else if (devide > 50 && devide < 70) {
+            console.log("grade is b");
+        }
+        else if (devide > 30 && devide < 50) {
+            console.log("grade is c");
+        }
+        else {
+            console.log("you are fail in exam");
+        }
+            }
+            else {
+                console.log("pass invlaid");
+            }
+        } 
+        else {
+            console.log("invalid username");
+        }
+
+      
+
+    </script>
+</body>
+
+</html>

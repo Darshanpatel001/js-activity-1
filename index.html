@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        
+        //////////////////////////////order-login-form/////////////////////
+
+
+        let user = "user"
+        let pass = "99**"
+        let role1 = "user"
+    
+        let admin = "admin"
+        let idpass = "77**"
+        let role2 = "admin"
+    
+        let order = "watch"
+    
+        const userr = prompt("enter username");
+        const password = prompt("enter password")
+        const role = prompt("enter role");
+    
+        if (userr == user && password == pass && role == role2) {
+            console.log("username is succesfull...");
+        }else if (userr == admin && password == idpass && role == role2) {
+            console.log("admin is succesfull");
+            const orderr = prompt("enter your order..")
+            if (orderr == order) {
+                console.log("order is succesfull...");
+            }else{
+                console.log("order is not valid..");
+            }
+        }else{
+            console.log("data is not valid..");
+        }
+
+    </script>
+
+
+
+</body>
+</html>
